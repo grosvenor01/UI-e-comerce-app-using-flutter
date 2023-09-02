@@ -9,13 +9,16 @@ class home extends StatelessWidget {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.white,
-        title: Row(children: const <Widget>[
+        title: Row(children: <Widget>[
           Text(
             "Revo store",
             style: TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(255, 0, 92, 168)),
           ),
           Spacer(),
           badges.Badge(
+            onTap: () {
+              Navigator.pushNamed(context, '/cart');
+            },
             badgeContent: Text(
               '3',
               style: TextStyle(color: Colors.white),

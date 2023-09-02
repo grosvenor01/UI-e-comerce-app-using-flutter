@@ -1,4 +1,5 @@
 import 'package:app/home.dart';
+import 'package:app/product.dart';
 import 'package:app/wishlist.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class _navState extends State<nav> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    List<Widget> screens = [home(),home(),wishlist()];
+    List<Widget> screens = [home(),prodcut(),wishlist()];
     return Scaffold(
       body: screens[currentIndex],
       bottomNavigationBar: CurvedNavigationBar(
