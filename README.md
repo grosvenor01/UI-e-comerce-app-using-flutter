@@ -1,6 +1,5 @@
-# app
+# Ui for e-comerce application to practice flutter 
 
-A new Flutter project.
 
 ## Getting Started
 
